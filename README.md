@@ -1,7 +1,7 @@
 # Jobflux - AI Job Scraper & Cold Outreach Automator
 
 **Created by Tooba Jatoi**  
-**Copyright © 2024 Tooba Jatoi. All rights reserved.**
+**Copyright © 2025 Tooba Jatoi. All rights reserved.**
 
 💼 A free Chrome extension that auto-detects jobs on LinkedIn, Wellfound, or Indeed, scrapes key job info, and generates a customized cover letter/email + outreach message using free LLM APIs — then lets the user send it via LinkedIn DM, email, or Notion save.
 
