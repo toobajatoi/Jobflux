@@ -1,7 +1,7 @@
 # Quick Installation Guide
 
 **Created by Tooba Jatoi**  
-**Copyright © 2024 Tooba Jatoi. All rights reserved.**
+**Copyright © 2025 Tooba Jatoi. All rights reserved.**
 
 ## 🚀 Install Jobflux in 5 Minutes
 
