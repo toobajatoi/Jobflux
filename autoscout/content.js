@@ -231,13 +231,13 @@ function extractIndeedJobData() {
       source: 'Indeed'
     };
   } catch (error) {
-    console.error('AutoScout: Error extracting Indeed job data:', error);
+    console.error('Jobflux: Error extracting Indeed job data:', error);
     return null;
   }
 }
 
-// Inject AutoScout button into the page
-function injectAutoScoutButton() {
+// Inject Jobflux button into the page
+function injectJobfluxButton() {
   // Remove existing button if present
   const existingButton = document.getElementById('jobflux-button');
   if (existingButton) {
@@ -272,7 +272,7 @@ function injectAutoScoutButton() {
   document.body.appendChild(button);
 }
 
-// Open AutoScout popup
+// Open Jobflux popup
 function openJobfluxPopup() {
   // Remove existing popup if present
   const existingPopup = document.getElementById('jobflux-popup');

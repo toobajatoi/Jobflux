@@ -43,7 +43,7 @@
 
 3. **Enable Developer Mode** by toggling the switch in the top right
 
-4. **Click "Load unpacked"** and select the `autoscout` folder
+4. **Click "Load unpacked"** and select the `autoscout` (Jobflux) folder
 
 5. **Pin the extension** to your toolbar for easy access
 

@@ -451,13 +451,13 @@ window.copyToClipboard = async function(text) {
 // Show help
 function showHelp() {
   chrome.tabs.create({
-    url: 'https://github.com/yourusername/autoscout-extension#readme'
+    url: 'https://github.com/yourusername/jobflux-extension#readme'
   });
 }
 
 // Show feedback
 function showFeedback() {
   chrome.tabs.create({
-    url: 'https://github.com/yourusername/autoscout-extension/issues'
+    url: 'https://github.com/yourusername/jobflux-extension/issues'
   });
 } 

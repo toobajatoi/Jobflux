@@ -13,7 +13,7 @@
 1. Open Chrome and go to `chrome://extensions/`
 2. Enable "Developer mode" (toggle in top right)
 3. Click "Load unpacked"
-4. Select the `autoscout` folder
+4. Select the `autoscout` (Jobflux) folder
 5. Pin the extension to your toolbar
 
 ### Step 3: Get Your API Key
