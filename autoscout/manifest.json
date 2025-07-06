@@ -1,0 +1,57 @@
+{
+  "manifest_version": 3,
+  "name": "Jobflux - AI Job Scraper & Outreach Automator",
+  "version": "1.0.0",
+  "description": "Automatically scrape job listings and generate personalized outreach messages using AI",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "clipboardWrite",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://*.linkedin.com/*",
+    "https://*.wellfound.com/*",
+    "https://*.indeed.com/*",
+    "https://api.openrouter.ai/*",
+    "https://api.notion.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.linkedin.com/jobs/*",
+        "https://*.linkedin.com/job/*",
+        "https://*.linkedin.com/*",
+        "https://*.wellfound.com/jobs/*",
+        "https://*.indeed.com/viewjob*",
+        "https://*.indeed.com/job/*"
+      ],
+      "js": ["content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Jobflux - Generate Job Outreach",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["popup.html", "popup.js", "styles.css"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+} 

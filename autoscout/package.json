@@ -1,0 +1,48 @@
+{
+  "name": "autoscout-extension",
+  "version": "1.0.0",
+  "description": "AI-powered Chrome extension for automated job scraping and personalized outreach message generation",
+  "main": "background.js",
+  "scripts": {
+    "build": "echo 'No build process needed for Chrome extension'",
+    "test": "echo 'No tests specified'",
+    "lint": "echo 'No linter configured'",
+    "package": "zip -r autoscout-extension.zip . -x '*.git*' 'node_modules/*' '*.DS_Store'",
+    "dev": "echo 'Load extension in Chrome as unpacked extension'"
+  },
+  "keywords": [
+    "chrome-extension",
+    "job-scraper",
+    "ai",
+    "llm",
+    "openrouter",
+    "notion",
+    "linkedin",
+    "indeed",
+    "wellfound",
+    "job-hunting",
+    "automation",
+    "outreach"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/autoscout-extension.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/autoscout-extension/issues"
+  },
+  "homepage": "https://github.com/yourusername/autoscout-extension#readme",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "devDependencies": {},
+  "dependencies": {},
+  "manifest": {
+    "version": 3,
+    "name": "AutoScout - AI Job Scraper & Outreach Automator",
+    "version": "1.0.0",
+    "description": "Automatically scrape job listings and generate personalized outreach messages using AI"
+  }
+} 
