@@ -1,7 +1,7 @@
 /**
  * Jobflux Chrome Extension - Background Service Worker
  * Created by Tooba Jatoi
- * Copyright © 2024 Tooba Jatoi. All rights reserved.
+ * Copyright © 2025 Tooba Jatoi. All rights reserved.
  */
 
 chrome.runtime.onInstalled.addListener(() => {
