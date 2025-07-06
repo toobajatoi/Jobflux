@@ -1,4 +1,7 @@
-# AutoScout - AI Job Scraper & Cold Outreach Automator
+# Jobflux - AI Job Scraper & Cold Outreach Automator
+
+**Created by Tooba Jatoi**  
+**Copyright © 2024 Tooba Jatoi. All rights reserved.**
 
 💼 A free Chrome extension that auto-detects jobs on LinkedIn, Wellfound, or Indeed, scrapes key job info, and generates a customized cover letter/email + outreach message using free LLM APIs — then lets the user send it via LinkedIn DM, email, or Notion save.
 
@@ -32,8 +35,8 @@
 
 1. **Clone or Download** this repository
    ```bash
-   git clone https://github.com/yourusername/autoscout-extension.git
-   cd autoscout-extension
+   git clone https://github.com/toobajatoi/Jobflux.git
+   cd Jobflux
    ```
 
 2. **Open Chrome** and navigate to `chrome://extensions/`
@@ -47,7 +50,7 @@
 ### Method 2: Chrome Web Store (Coming Soon)
 
 1. Visit the Chrome Web Store
-2. Search for "AutoScout"
+2. Search for "Jobflux"
 3. Click "Add to Chrome"
 4. Follow the setup instructions
 
@@ -62,7 +65,7 @@
 
 ### 2. Configure the Extension
 
-1. **Click the AutoScout extension icon** in your Chrome toolbar
+1. **Click the Jobflux extension icon** in your Chrome toolbar
 2. **Go to the Settings tab**
 3. **Enter your OpenRouter API key** in the designated field
 4. **Add your resume summary** (optional but recommended for better personalization)
@@ -99,8 +102,8 @@
 ### Basic Usage
 
 1. **Navigate to a job listing** on LinkedIn, Wellfound, or Indeed
-2. **Look for the AutoScout floating button** (bottom right corner)
-3. **Click the button** to open the AutoScout popup
+2. **Look for the Jobflux floating button** (bottom right corner)
+3. **Click the button** to open the Jobflux popup
 4. **Click "Generate Outreach"** to create personalized messages
 5. **Copy, send, or save** your generated content
 
@@ -151,7 +154,7 @@ autoscout/
 #### Content Script (`content.js`)
 - Detects job pages on supported sites
 - Extracts job data (title, company, description)
-- Injects floating AutoScout button
+- Injects floating Jobflux button
 - Handles user interactions on job pages
 
 #### Background Script (`background.js`)
@@ -261,7 +264,7 @@ Extend functionality by:
 Enable debug logging:
 1. Open Chrome DevTools
 2. Go to the Console tab
-3. Look for "AutoScout:" prefixed messages
+3. Look for "Jobflux:" prefixed messages
 
 ## 🤝 Contributing
 
@@ -287,6 +290,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🙏 Acknowledgments
 
+- **Tooba Jatoi** - Creator and developer of Jobflux
 - **OpenRouter** for providing free LLM API access
 - **Notion** for their excellent API and database features
 - **Chrome Extension community** for documentation and examples
@@ -316,6 +320,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**Made with ❤️ for job seekers everywhere**
+**Made with ❤️ by Tooba Jatoi for job seekers everywhere**
 
-*AutoScout - Your AI-powered job hunting companion* 
+*Jobflux - Your AI-powered job hunting companion* 

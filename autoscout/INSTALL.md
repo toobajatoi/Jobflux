@@ -1,6 +1,9 @@
 # Quick Installation Guide
 
-## 🚀 Install AutoScout in 5 Minutes
+**Created by Tooba Jatoi**  
+**Copyright © 2024 Tooba Jatoi. All rights reserved.**
+
+## 🚀 Install Jobflux in 5 Minutes
 
 ### Step 1: Download the Extension
 1. Download or clone this repository
@@ -18,8 +21,8 @@
 2. Sign up for a free account
 3. Copy your API key (starts with `sk-or-v1-`)
 
-### Step 4: Configure AutoScout
-1. Click the AutoScout icon in your toolbar
+### Step 4: Configure Jobflux
+1. Click the Jobflux icon in your toolbar
 2. Go to Settings tab
 3. Paste your OpenRouter API key
 4. Add your resume summary (optional)
@@ -27,7 +30,7 @@
 
 ### Step 5: Start Using!
 1. Go to any job listing on LinkedIn, Wellfound, or Indeed
-2. Look for the AutoScout floating button
+2. Look for the Jobflux floating button
 3. Click it and generate personalized outreach messages!
 
 ## 🎯 What You'll Get
@@ -53,11 +56,11 @@
 
 **Need help?**
 - Check the main README.md for detailed documentation
-- Open Chrome DevTools and look for "AutoScout:" messages
+- Open Chrome DevTools and look for "Jobflux:" messages
 - Report issues on GitHub
 
 ## 🎉 You're Ready!
 
-AutoScout is now ready to help you land your dream job! The extension will automatically detect job listings and help you create compelling, personalized outreach messages that stand out to recruiters.
+Jobflux is now ready to help you land your dream job! The extension will automatically detect job listings and help you create compelling, personalized outreach messages that stand out to recruiters.
 
 Happy job hunting! 🚀 

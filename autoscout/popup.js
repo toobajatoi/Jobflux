@@ -1,4 +1,9 @@
-// Popup script for AutoScout Chrome Extension
+/**
+ * Jobflux Chrome Extension - Popup Script
+ * Created by Tooba Jatoi
+ * Copyright © 2024 Tooba Jatoi. All rights reserved.
+ */
+
 document.addEventListener('DOMContentLoaded', () => {
   initializePopup();
 });

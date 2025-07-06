@@ -1,43 +1,48 @@
-// Content script for AutoScout Chrome Extension
-// Handles job data extraction from various job sites
+/**
+ * Jobflux Chrome Extension - Content Script
+ * Created by Tooba Jatoi
+ * Copyright © 2024 Tooba Jatoi. All rights reserved.
+ * 
+ * Handles job data extraction from various job sites
+ */
 
-console.log('AutoScout: Content script loaded successfully!');
+console.log('Jobflux: Content script loaded successfully!');
 
 let jobData = null;
 let isJobPage = false;
 
 // Run immediately and after delays to handle dynamic loading
-function initializeAutoScout() {
-  console.log('AutoScout: Initializing...');
+function initializeJobflux() {
+  console.log('Jobflux: Initializing...');
   detectJobPage();
   if (isJobPage) {
-    console.log('AutoScout: Job page detected, extracting data...');
+    console.log('Jobflux: Job page detected, extracting data...');
     extractJobData();
-    injectAutoScoutButton();
+    injectJobfluxButton();
   } else {
-    console.log('AutoScout: Not a job page');
+    console.log('Jobflux: Not a job page');
   }
 }
 
 // Run immediately
-initializeAutoScout();
+initializeJobflux();
 
 // Run after DOM is ready
 document.addEventListener('DOMContentLoaded', () => {
-  console.log('AutoScout: DOMContentLoaded event fired');
-  initializeAutoScout();
+  console.log('Jobflux: DOMContentLoaded event fired');
+  initializeJobflux();
 });
 
 // Run after a delay to handle dynamic content
 setTimeout(() => {
-  console.log('AutoScout: Delayed initialization...');
-  initializeAutoScout();
+  console.log('Jobflux: Delayed initialization...');
+  initializeJobflux();
 }, 2000);
 
 // Run after another delay for very slow loading
 setTimeout(() => {
-  console.log('AutoScout: Final delayed initialization...');
-  initializeAutoScout();
+  console.log('Jobflux: Final delayed initialization...');
+  initializeJobflux();
 }, 5000);
 
 // Also run on navigation changes (for SPA sites)
@@ -45,10 +50,10 @@ let lastUrl = location.href;
 new MutationObserver(() => {
   const url = location.href;
   if (url !== lastUrl) {
-    console.log('AutoScout: URL changed, re-detecting job page...');
+    console.log('Jobflux: URL changed, re-detecting job page...');
     lastUrl = url;
     setTimeout(() => {
-      initializeAutoScout();
+      initializeJobflux();
     }, 1000); // Wait for page to load
   }
 }).observe(document, { subtree: true, childList: true });
@@ -62,7 +67,7 @@ function detectJobPage() {
     url.includes('indeed.com/viewjob') ||
     url.includes('indeed.com/job/')
   );
-  console.log('AutoScout: URL check result:', { url, isJobPage });
+  console.log('Jobflux: URL check result:', { url, isJobPage });
 }
 
 // Extract job data based on the current site
@@ -78,20 +83,20 @@ function extractJobData() {
   }
   
   if (jobData) {
-    console.log('AutoScout: Extracted job data:', jobData);
+    console.log('Jobflux: Extracted job data:', jobData);
     chrome.runtime.sendMessage({
       action: 'jobDataExtracted',
       jobData: jobData
     });
   } else {
-    console.log('AutoScout: No job data extracted');
+    console.log('Jobflux: No job data extracted');
   }
 }
 
 // Extract job data from LinkedIn
 function extractLinkedInJobData() {
   try {
-    console.log('AutoScout: Attempting to extract LinkedIn job data...');
+    console.log('Jobflux: Attempting to extract LinkedIn job data...');
     
     // Job title - try multiple selectors
     const titleElement = 
@@ -126,7 +131,7 @@ function extractLinkedInJobData() {
       document.querySelector('.jobs-box__html-content .jobs-description-content__text') ||
       document.querySelector('.jobs-description__content .jobs-box__html-content');
     
-    console.log('AutoScout: Found elements:', {
+    console.log('Jobflux: Found elements:', {
       title: titleElement?.textContent?.trim(),
       company: companyElement?.textContent?.trim(),
       location: locationElement?.textContent?.trim(),
@@ -134,7 +139,7 @@ function extractLinkedInJobData() {
     });
     
     if (!titleElement || !companyElement || !descriptionElement) {
-      console.log('AutoScout: Missing required elements for LinkedIn job data');
+      console.log('Jobflux: Missing required elements for LinkedIn job data');
       return null;
     }
     
@@ -147,7 +152,7 @@ function extractLinkedInJobData() {
       source: 'LinkedIn'
     };
   } catch (error) {
-    console.error('AutoScout: Error extracting LinkedIn job data:', error);
+    console.error('Jobflux: Error extracting LinkedIn job data:', error);
     return null;
   }
 }
@@ -186,7 +191,7 @@ function extractWellfoundJobData() {
       source: 'Wellfound'
     };
   } catch (error) {
-    console.error('AutoScout: Error extracting Wellfound job data:', error);
+    console.error('Jobflux: Error extracting Wellfound job data:', error);
     return null;
   }
 }

@@ -1,6 +1,11 @@
-// Background service worker for AutoScout Chrome Extension
+/**
+ * Jobflux Chrome Extension - Background Service Worker
+ * Created by Tooba Jatoi
+ * Copyright © 2024 Tooba Jatoi. All rights reserved.
+ */
+
 chrome.runtime.onInstalled.addListener(() => {
-  console.log('AutoScout extension installed');
+  console.log('Jobflux extension installed');
   
   // Initialize default settings
   chrome.storage.local.set({
@@ -63,8 +68,8 @@ async function generateOutreachMessage(jobData) {
       headers: {
         'Authorization': `Bearer ${settings.openRouterApiKey}`,
         'Content-Type': 'application/json',
-        'HTTP-Referer': 'https://autoscout-extension.com',
-        'X-Title': 'AutoScout Extension'
+        'HTTP-Referer': 'https://jobflux-extension.com',
+        'X-Title': 'Jobflux Extension'
       },
       body: JSON.stringify({
         model: 'mistralai/mixtral-8x7b-instruct',

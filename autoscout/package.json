@@ -1,5 +1,5 @@
 {
-  "name": "autoscout-extension",
+  "name": "jobflux-extension",
   "version": "1.0.0",
   "description": "AI-powered Chrome extension for automated job scraping and personalized outreach message generation",
   "main": "background.js",
@@ -7,7 +7,7 @@
     "build": "echo 'No build process needed for Chrome extension'",
     "test": "echo 'No tests specified'",
     "lint": "echo 'No linter configured'",
-    "package": "zip -r autoscout-extension.zip . -x '*.git*' 'node_modules/*' '*.DS_Store'",
+    "package": "zip -r jobflux-extension.zip . -x '*.git*' 'node_modules/*' '*.DS_Store'",
     "dev": "echo 'Load extension in Chrome as unpacked extension'"
   },
   "keywords": [
@@ -24,16 +24,16 @@
     "automation",
     "outreach"
   ],
-  "author": "Your Name",
+  "author": "Tooba Jatoi",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/autoscout-extension.git"
+    "url": "https://github.com/toobajatoi/Jobflux.git"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/autoscout-extension/issues"
+    "url": "https://github.com/toobajatoi/Jobflux/issues"
   },
-  "homepage": "https://github.com/yourusername/autoscout-extension#readme",
+  "homepage": "https://github.com/toobajatoi/Jobflux#readme",
   "engines": {
     "node": ">=14.0.0"
   },
@@ -41,7 +41,7 @@
   "dependencies": {},
   "manifest": {
     "version": 3,
-    "name": "AutoScout - AI Job Scraper & Outreach Automator",
+    "name": "Jobflux - AI Job Scraper & Outreach Automator",
     "version": "1.0.0",
     "description": "Automatically scrape job listings and generate personalized outreach messages using AI"
   }
