@@ -1,7 +1,7 @@
 /**
  * Jobflux Chrome Extension - Content Script
  * Created by Tooba Jatoi
- * Copyright © 2024 Tooba Jatoi. All rights reserved.
+ * Copyright © 2025 Tooba Jatoi. All rights reserved.
  * 
  * Handles job data extraction from various job sites
  */
